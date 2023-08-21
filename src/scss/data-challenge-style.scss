@@ -1,0 +1,59 @@
+@import "reset";
+@import "variables";
+
+@media only screen and (max-width: $breakpoint-md-max)  {
+    table.p-datatable-table {
+        display: grid !important;
+    }
+    td, th {
+        padding: 0.2rem;
+    }
+    td {
+      width: 33%;
+      min-width: 33%;
+    }
+}
+@media only screen and (min-width: $breakpoint-lg-min)  {
+    td{
+        padding: 1rem;
+    }
+    th {
+        padding: 0.2rem 1rem;
+    }
+   tbody, thead.p-datatable-thead {
+    width: 45%;
+    max-width: 45%;
+    display: block !important;
+   }
+   thead.p-datatable-thead {
+    border-radius: 0.5rem;
+   }
+   tbody {
+    margin-left: 50%;
+    top: -187px;
+    position: relative;
+   }
+}
+tbody td {
+    border: 1px solid $brand-secondary;
+}
+thead.p-datatable-thead {
+    background-color: $branding-primary;
+    color: $branding-text-alt;
+    padding-bottom: 1.5rem;
+}
+thead.p-datatable-thead tr, th {
+    width: 100% !important;
+    max-width: 100% !important;
+    display: block !important;
+}
+thead.p-datatable-thead span, thead svg{
+    color: $branding-text-alt;
+}
+.p-column-header-content {
+    margin: 0 auto;
+    display:block !important;
+}
+.p-filter-column button {
+    display: none ;
+}
